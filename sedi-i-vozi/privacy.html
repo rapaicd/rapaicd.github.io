@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sedi I Vozi – politika privatnosti</title>
+<meta name="description" content="Kako aplikacija Sedi I Vozi čuva i koristi podatke. Privacy policy of the Sedi I Vozi app.">
+<style>
+  :root {
+    --bg: #f4f7f6; --paper: #ffffff; --ink: #172120; --muted: #56676a;
+    --line: #d8e2e0; --accent: #0b6b68; --soft: #e1f0ed; --warn: #8a5a00; --warn-bg: #fff3d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --bg: #0e1514; --paper: #151f1e; --ink: #e4ecea; --muted: #98a9a6;
+      --line: #27352f; --accent: #5cc6ba; --soft: #193532; --warn: #ffcf66; --warn-bg: #3a2e12;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+    padding-inline: 16px; padding-block: 24px 64px;
+  }
+  main { max-width: 720px; margin: 0 auto; display: grid; gap: 40px; }
+  header { display: flex; gap: 16px; align-items: center; }
+  header svg { flex: none; border-radius: 22%; }
+  h1 { font-size: clamp(26px, 5vw, 34px); line-height: 1.15; margin: 0; text-wrap: balance; }
+  h2 { font-size: 21px; margin: 32px 0 8px; line-height: 1.25; }
+  h3 { font-size: 17px; margin: 20px 0 4px; }
+  p, ul { margin: 8px 0; max-width: 68ch; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); }
+  .langs { display: flex; gap: 12px; font-size: 15px; }
+  article { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 8px 24px 24px; }
+  @media (max-width: 480px) { article { padding: 4px 16px 16px; } }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 8px 8px 0; border-top: 1px solid var(--line); }
+  th { font-weight: 600; width: 34%; }
+  .table { overflow-x: auto; }
+  .summary { background: var(--soft); border-radius: 12px; padding: 4px 16px; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <!-- App icon: fuel drop with a consumption line (apps/auto/store/icon.svg) -->
+    <svg width="64" height="64" viewBox="0 0 108 108" aria-hidden="true">
+      <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#13867C"/><stop offset="1" stop-color="#0A4A57"/></linearGradient></defs>
+      <rect width="108" height="108" fill="url(#bg)"/>
+      <path d="M54,19C54,19 31,40.15 31,62C31,74.7 41.3,85 54,85C66.7,85 77,74.7 77,62C77,40.15 54,19 54,19Z" fill="#fff"/>
+      <path d="M39,70 L48,60 L56,66 L68,51" fill="none" stroke="#0D5F66" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="68" cy="51" r="4.6" fill="#FFB81C"/>
+    </svg>
+    <div>
+      <h1>Sedi I Vozi: politika privatnosti</h1>
+      <nav class="langs" aria-label="Jezik / Language"><a href="#sr">Srpski</a><a href="#en">English</a><a href="delete-account.html">Brisanje naloga / Delete account</a></nav>
+    </div>
+  </header>
+
+  <article id="sr" lang="sr">
+    <p class="muted">Važi od: 02.10.2026.</p>
+
+    <div class="summary">
+      <h2 style="margin-top:12px">Ukratko</h2>
+      <ul>
+        <li>Čuvamo samo ono što upišeš o autu (vozilo, točenja, datume registracije i servisa) i podešavanje valute, da bi ti aplikacija računala potrošnju i troškove i radila na svakom tvom telefonu.</li>
+        <li>Ne tražimo ime, email ni broj telefona: nalog je anoniman. Ako sam povežeš Google nalog (da podaci ne propadnu pri promeni telefona), čuvamo email i ime sa tog naloga.</li>
+        <li>Drugi korisnici nikad ne vide tvoje podatke. Poređenje potrošnje koristi samo zbirne vrednosti grupa od najmanje 5 korisnika.</li>
+        <li>Kad aplikacija padne, šalje se tehnički izveštaj o grešci, a broje se i neke radnje (npr. „dodat auto”), preko Google-ovog servisa Firebase. To ne sadrži tvoje unose i nije povezano sa tvojim nalogom, a oba možeš da isključiš u Podešavanjima.</li>
+        <li>Nema reklama i ne prodajemo podatke.</li>
+        <li>Nalog i sve podatke možeš da obrišeš u aplikaciji, odmah i trajno.</li>
+      </ul>
+    </div>
+
+    <h2>Ko je odgovoran za podatke</h2>
+    <p>Rukovalac podacima je <strong>Danilo Rapaić</strong>, fizičko lice, Beograd, Srbija. Kontakt za sva pitanja o privatnosti: <strong>danilo.applications@gmail.com</strong>.</p>
+
+    <h2>Koje podatke obrađujemo</h2>
+    <div class="table">
+    <table>
+      <tr><th>Anonimni nalog</th><td>Nasumičan identifikator koji aplikacija dobije pri prvom pokretanju. Ne sadrži ime ni email.</td></tr>
+      <tr><th>Google nalog (samo ako ga povežeš)</th><td>Email adresa, ime, link do slike profila i Google-ov identifikator naloga, onako kako ih Google pošalje pri prijavi. Služe samo za prijavu na tvoj nalog na drugom telefonu; lozinku od Google naloga nikad ne vidimo.</td></tr>
+      <tr><th>Vozila</th><td>Marka i model (ili naziv koji upišeš), godište, gorivo, zapremina i snaga motora, nadimak, datum isteka registracije, datum i kilometraža sledećeg servisa.</td></tr>
+      <tr><th>Točenja</th><td>Datum, kilometraža, litri, iznos i valuta, vrsta goriva, da li je rezervoar pun i da li je prethodno točenje propušteno.</td></tr>
+      <tr><th>Podešavanja</th><td>Valuta (čuva se uz nalog). Tema i jezik ostaju samo na telefonu.</td></tr>
+      <tr><th>Tehnički podaci</th><td>Pri svakoj vezi sa serverom naš hosting provajder beleži IP adresu i vreme zahteva, radi bezbednosti i otklanjanja kvarova.</td></tr>
+      <tr><th>Izveštaji o padovima (Firebase Crashlytics)</th><td>Kad aplikacija padne ili naiđe na grešku: opis greške i mesto u kodu, verzija aplikacije, model telefona, verzija Androida, stanje uređaja u tom trenutku (npr. slobodna memorija), vreme i nasumičan identifikator instalacije. Bez tvojih unosa, bez ID-ja korisnika i bez email-a. Isključuje se u Podešavanjima („Izveštaji o padovima”).</td></tr>
+      <tr><th>Statistika korišćenja (Firebase Analytics)</th><td>Nekoliko radnji koje aplikacija sama beleži (dodat auto, dodato točenje, upisan datum za podsetnik, prikazano poređenje, povezan Google nalog), uz osnovne događaje koje Firebase beleži sam (prvo pokretanje, početak korišćenja, ažuriranje aplikacije); nasumičan identifikator instalacije, model telefona, verzija Androida i aplikacije, jezik i približna lokacija (zemlja, grad) izvedena iz IP adrese, koju Google ne čuva. Bez tvojih unosa, bez ID-ja korisnika, bez identifikatora za reklame i bez praćenja ekrana. Isključuje se u Podešavanjima („Statistika korišćenja”).</td></tr>
+    </table>
+    </div>
+    <p>Podsetnici za registraciju i servis zakazuju se na samom telefonu; za njih se ništa ne šalje na server osim datuma upisanih uz vozilo.</p>
+    <p>Aplikacija ne koristi GPS lokaciju, kontakte, kameru ni fotografije.</p>
+
+    <h2>Zašto i na osnovu čega</h2>
+    <ul>
+      <li><strong>Da bi aplikacija radila</strong>: čuvanje i sinhronizacija tvojih unosa, računanje potrošnje i troškova, podsetnici, prijava preko Google naloga ako je povežeš. Osnov: izvršenje ugovora, odnosno pružanje usluge koju koristiš (čl. 12 st. 1 tač. 2 Zakona o zaštiti podataka o ličnosti).</li>
+      <li><strong>Zbirna statistika za poređenje</strong>: jednom dnevno računamo medijanu potrošnje za grupe istih modela (npr. „Volkswagen Golf, dizel 1,9 l, 2005–2009”). Grupa se prikazuje tek kad ima najmanje 5 različitih korisnika, a svaki korisnik se računa jednom. Pojedinačne vrednosti se nikad ne prikazuju ni ne dele. Osnov: legitimni interes (da aplikacija svakome pokaže kako stoji u odnosu na druge vozače istog modela, bez otkrivanja ičijih pojedinačnih podataka).</li>
+      <li><strong>Bezbednost i otklanjanje kvarova</strong> (tehnički podaci). Osnov: legitimni interes.</li>
+      <li><strong>Popravka grešaka</strong> (izveštaji o padovima) i <strong>poboljšanje aplikacije</strong> (statistika korišćenja: koji delovi aplikacije se koriste i da li se grupe za poređenje popunjavaju). Osnov: legitimni interes (da aplikacija radi bez grešaka i da znamo šta treba poboljšati). Oba su podrazumevano uključena i svako posebno možeš da isključiš u Podešavanjima; od tada se ništa ne šalje.</li>
+    </ul>
+
+    <h2>Ko još vidi podatke</h2>
+    <p>Niko od drugih korisnika. Podaci se čuvaju kod obrađivača <strong>Supabase Inc.</strong> (baza podataka i prijava), na serverima u <strong>Evropskoj uniji (Frankfurt, Nemačka)</strong>. Supabase obrađuje podatke samo po našem nalogu. Aplikaciju distribuira Google Play, koji o preuzimanjima vodi sopstvenu evidenciju po svojoj politici privatnosti. Ako povežeš Google nalog, prijavu obavlja <strong>Google</strong>, koji tako saznaje da koristiš našu aplikaciju.</p>
+    <p>Izveštaje o padovima i statistiku korišćenja obrađuje <strong>Google</strong> (servis Firebase), kao obrađivač po našem nalogu. Ti podaci se mogu obrađivati i na Google-ovim serverima u <strong>SAD</strong>; prenos se zasniva na standardnim ugovornim klauzulama koje su deo Google-ovih uslova obrade podataka. Google ih ne koristi za reklame: isključili smo identifikator za reklame, Google signale i deljenje podataka sa Google-om.</p>
+    <p>Podatke ne prodajemo, ne iznajmljujemo i ne koristimo za reklame.</p>
+
+    <h2>Koliko dugo ih čuvamo</h2>
+    <ul>
+      <li>Dok postoji tvoj nalog. Kad obrišeš nalog, svi podaci se odmah i trajno brišu sa servera i sa telefona.</li>
+      <li>Ono što obrišeš u aplikaciji (npr. auto ili točenje) odmah nestaje iz aplikacije, a sa servera se trajno briše najkasnije posle 90 dana. Do tada je samo označeno kao obrisano, da bi i tvoji drugi telefoni saznali za brisanje.</li>
+      <li>Anonimni nalozi bez ijednog podatka automatski se brišu posle 60 dana.</li>
+      <li>Zbirna statistika se računa ponovo svake noći, pa posle brisanja naloga tvoji podaci više ne ulaze u nju.</li>
+      <li>Izveštaji o padovima: 90 dana. Statistika korišćenja: pojedinačni događaji 2 meseca, posle toga samo zbirni brojevi (npr. „120 dodatih auta u oktobru”). Ovi podaci nisu vezani za nalog, pa ih brisanje naloga ne briše, a mi po njima ne možemo da saznamo čiji su.</li>
+    </ul>
+
+    <h2>Tvoja prava</h2>
+    <p>Imaš pravo da zatražiš pristup svojim podacima, ispravku, brisanje, ograničenje obrade i prenos podataka, i da uložiš prigovor. Većinu podataka možeš da vidiš i menjaš u aplikaciji, a nalog možeš i da obrišeš (<a href="delete-account.html">uputstvo</a>). Za ostalo piši na danilo.applications@gmail.com i navedi ID korisnika sa ekrana „Nalog”. Odgovaramo najkasnije u roku od 30 dana.</p>
+    <p>Ako smatraš da podatke obrađujemo nezakonito, možeš da podneseš pritužbu <strong>Povereniku za informacije od javnog značaja i zaštitu podataka o ličnosti</strong>, Bulevar kralja Aleksandra 15, 11000 Beograd, <a href="https://www.poverenik.rs">www.poverenik.rs</a>.</p>
+
+    <h2>Bezbednost</h2>
+    <p>Sva komunikacija sa serverom je šifrovana (HTTPS). Na serveru svaki nalog može da pročita i menja samo svoje podatke; to proverava sama baza, za svaki zahtev.</p>
+
+    <h2>Deca</h2>
+    <p>Aplikacija je namenjena vozačima i nije namenjena licima mlađim od 18 godina.</p>
+
+    <h2>Izmene</h2>
+    <p>Kad promenimo ovu politiku, novu verziju objavljujemo na ovoj stranici sa novim datumom. O bitnim izmenama (npr. nove vrste podataka) obaveštavamo i u aplikaciji.</p>
+  </article>
+
+  <article id="en" lang="en">
+    <h2 style="margin-top:16px">Privacy policy (English)</h2>
+    <p class="muted">Effective from: 2 October 2026. If the two versions differ, the Serbian version prevails.</p>
+
+    <div class="summary">
+      <h3 style="margin-top:12px">In short</h3>
+      <ul>
+        <li>We store only what you enter about your car (vehicles, refuels, registration and service dates) and your currency setting, so the app can calculate consumption and costs and work on each of your phones.</li>
+        <li>We do not ask for your name, email or phone number: the account is anonymous. If you choose to link a Google account (so your data survives a change of phone), we store that account's email and name.</li>
+        <li>Other users never see your data. The consumption comparison uses only aggregate values of groups with at least 5 users.</li>
+        <li>When the app crashes, a technical error report is sent, and a few actions (e.g. "car added") are counted, through Google's Firebase service. This contains none of your entries and is not linked to your account; you can turn both off in Settings.</li>
+        <li>No ads, and we do not sell data.</li>
+        <li>You can delete your account and all data yourself in the app, immediately and permanently.</li>
+      </ul>
+    </div>
+
+    <h3>Who is responsible</h3>
+    <p>The controller is <strong>Danilo Rapaić</strong>, a private individual, Belgrade, Serbia. Contact for privacy questions: <strong>danilo.applications@gmail.com</strong>.</p>
+
+    <h3>What we process</h3>
+    <div class="table">
+    <table>
+      <tr><th>Anonymous account</th><td>A random identifier the app receives on first launch. It contains no name or email.</td></tr>
+      <tr><th>Google account (only if you link it)</th><td>Email address, name, profile picture link and Google's account identifier, as Google sends them at sign-in. They are used only to sign you in to your account on another phone; we never see your Google password.</td></tr>
+      <tr><th>Vehicles</th><td>Make and model (or a name you type), model year, fuel, engine size and power, nickname, registration expiry date, next service date and odometer.</td></tr>
+      <tr><th>Refuels</th><td>Date, odometer, liters, amount and currency, fuel type, whether the tank was full and whether the previous refuel was missed.</td></tr>
+      <tr><th>Settings</th><td>Currency (stored with the account). Theme and language stay on the phone only.</td></tr>
+      <tr><th>Technical data</th><td>For every request to the server, our hosting provider logs the IP address and time, for security and troubleshooting.</td></tr>
+      <tr><th>Crash reports (Firebase Crashlytics)</th><td>When the app crashes or hits an error: the error and where in the code it happened, app version, phone model, Android version, device state at that moment (e.g. free memory), time and a random installation identifier. None of your entries, no user ID, no email. Can be turned off in Settings ("Crash reports").</td></tr>
+      <tr><th>Usage statistics (Firebase Analytics)</th><td>A few actions the app logs itself (car added, refuel added, reminder date entered, comparison shown, Google account linked), plus basic events Firebase logs on its own (first launch, session start, app update); a random installation identifier, phone model, Android and app version, language and approximate location (country, city) derived from the IP address, which Google does not store. None of your entries, no user ID, no advertising ID, no screen tracking. Can be turned off in Settings ("Usage statistics").</td></tr>
+    </table>
+    </div>
+    <p>Registration and service reminders are scheduled on the phone itself. The app does not use GPS location, contacts, camera or photos.</p>
+
+    <h3>Why, and on what basis</h3>
+    <ul>
+      <li><strong>To provide the app</strong>: storing and syncing your entries, calculating consumption and costs, reminders, signing in with Google if you link it. Basis: performance of a contract (Art. 12(1)(2) of the Serbian Law on Personal Data Protection).</li>
+      <li><strong>Aggregate statistics for comparison</strong>: once a day we compute the median consumption of groups of the same model. A group is shown only when it has at least 5 different users, and each user counts once. Individual values are never shown or shared. Basis: legitimate interest (showing everyone how they compare with other drivers of the same model, without revealing anyone's individual data).</li>
+      <li><strong>Security and troubleshooting</strong> (technical data). Basis: legitimate interest.</li>
+      <li><strong>Fixing bugs</strong> (crash reports) and <strong>improving the app</strong> (usage statistics: which parts of the app are used and whether comparison groups fill up). Basis: legitimate interest (keeping the app free of bugs and knowing what to improve). Both are on by default and you can turn each off in Settings; from then on nothing is sent.</li>
+    </ul>
+
+    <h3>Who else sees the data</h3>
+    <p>No other user. Data is stored by our processor <strong>Supabase Inc.</strong> (database and sign-in) on servers in the <strong>European Union (Frankfurt, Germany)</strong>, processing it only on our instructions. The app is distributed through Google Play, which keeps its own records of downloads under its own privacy policy. If you link a Google account, <strong>Google</strong> performs the sign-in and so learns that you use our app. Crash reports and usage statistics are processed by <strong>Google</strong> (Firebase) as our processor, possibly on servers in the <strong>United States</strong>; the transfer relies on the standard contractual clauses included in Google's data processing terms. Google does not use them for advertising: we turned off the advertising ID, Google signals and data sharing with Google. We do not sell or rent data, and we do not use it for advertising.</p>
+
+    <h3>How long we keep it</h3>
+    <ul>
+      <li>As long as your account exists. When you delete the account, all data is deleted immediately and permanently, on the server and on the phone.</li>
+      <li>What you delete in the app (e.g. a car or a refuel) disappears from the app immediately and is deleted from the server for good within 90 days. Until then it is only marked as deleted, so your other phones learn about the deletion too.</li>
+      <li>Anonymous accounts without any data are deleted automatically after 60 days.</li>
+      <li>Crash reports: 90 days. Usage statistics: individual events 2 months, after that only aggregate counts. This data is not linked to the account, so deleting the account does not delete it, but we cannot tell whose it is.</li>
+    </ul>
+
+    <h3>Your rights</h3>
+    <p>You have the right to access, rectify and erase your data, to restrict processing, to data portability and to object. You can see and edit most data in the app and delete the account yourself (<a href="delete-account.html">how</a>). For anything else, write to danilo.applications@gmail.com with the user ID from the "Account" screen; we reply within 30 days. You can lodge a complaint with the Serbian Commissioner for Information of Public Importance and Personal Data Protection, Bulevar kralja Aleksandra 15, 11000 Belgrade, <a href="https://www.poverenik.rs">www.poverenik.rs</a>.</p>
+
+    <h3>Security</h3>
+    <p>All communication with the server is encrypted (HTTPS). On the server, every account can read and change only its own data, enforced by the database for every request.</p>
+
+    <h3>Children</h3>
+    <p>The app is meant for drivers and is not intended for persons under 18.</p>
+
+    <h3>Changes</h3>
+    <p>When this policy changes, we publish the new version on this page with a new date, and announce important changes in the app.</p>
+  </article>
+</main>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sedi I Vozi – brisanje naloga</title>
+<meta name="description" content="Kako obrisati nalog i sve podatke u aplikaciji Sedi I Vozi. How to delete your Sedi I Vozi account and data.">
+<style>
+  :root {
+    --bg: #f4f7f6; --paper: #ffffff; --ink: #172120; --muted: #56676a;
+    --line: #d8e2e0; --accent: #0b6b68; --soft: #e1f0ed; --warn: #8a5a00; --warn-bg: #fff3d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --bg: #0e1514; --paper: #151f1e; --ink: #e4ecea; --muted: #98a9a6;
+      --line: #27352f; --accent: #5cc6ba; --soft: #193532; --warn: #ffcf66; --warn-bg: #3a2e12;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+    padding-inline: 16px; padding-block: 24px 64px;
+  }
+  main { max-width: 720px; margin: 0 auto; display: grid; gap: 40px; }
+  header { display: flex; gap: 16px; align-items: center; }
+  header svg { flex: none; border-radius: 22%; }
+  h1 { font-size: clamp(26px, 5vw, 34px); line-height: 1.15; margin: 0; text-wrap: balance; }
+  h2 { font-size: 21px; margin: 28px 0 8px; line-height: 1.25; }
+  p, ul, ol { margin: 8px 0; max-width: 68ch; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); }
+  .langs { display: flex; flex-wrap: wrap; gap: 12px; font-size: 15px; }
+  article { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 8px 24px 24px; }
+  @media (max-width: 480px) { article { padding: 4px 16px 16px; } }
+  .steps { background: var(--soft); border-radius: 12px; padding: 8px 16px 8px 40px; }
+  .ui { font-weight: 600; white-space: nowrap; }
+  code { font: 15px ui-monospace, "SFMono-Regular", Menlo, monospace; background: var(--soft); padding: 1px 6px; border-radius: 6px; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg width="64" height="64" viewBox="0 0 108 108" aria-hidden="true">
+      <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#13867C"/><stop offset="1" stop-color="#0A4A57"/></linearGradient></defs>
+      <rect width="108" height="108" fill="url(#bg)"/>
+      <path d="M54,19C54,19 31,40.15 31,62C31,74.7 41.3,85 54,85C66.7,85 77,74.7 77,62C77,40.15 54,19 54,19Z" fill="#fff"/>
+      <path d="M39,70 L48,60 L56,66 L68,51" fill="none" stroke="#0D5F66" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="68" cy="51" r="4.6" fill="#FFB81C"/>
+    </svg>
+    <div>
+      <h1>Sedi I Vozi: brisanje naloga i podataka</h1>
+      <nav class="langs" aria-label="Jezik / Language"><a href="#sr">Srpski</a><a href="#en">English</a><a href="privacy.html">Politika privatnosti / Privacy policy</a></nav>
+    </div>
+  </header>
+
+  <article id="sr" lang="sr">
+    <h2>U aplikaciji (odmah)</h2>
+    <ol class="steps">
+      <li>Otvori aplikaciju <span class="ui">Sedi I Vozi</span>.</li>
+      <li>Dodirni <span class="ui">Podešavanja</span> (zupčanik gore desno), pa <span class="ui">Nalog</span>.</li>
+      <li>Dodirni <span class="ui">Obriši nalog i sve podatke</span> i potvrdi.</li>
+    </ol>
+    <p>Za brisanje je potreban internet. Posle potvrde aplikacija počinje ispočetka, sa novim praznim nalogom.</p>
+
+    <h2>Bez aplikacije (email)</h2>
+    <p>Ako aplikacija više nije na telefonu, pošalji email na <strong>danilo.applications@gmail.com</strong> sa naslovom <code>Brisanje naloga</code> i napiši ID korisnika ili, ako je nalog povezan sa Google-om, pošalji email sa te Google adrese. ID piše na ekranu <span class="ui">Nalog</span> (npr. „ID korisnika: 1a2b3c4d”). Nalog brišemo u roku od 30 dana i potvrđujemo odgovorom na email.</p>
+    <p class="muted">Anonimni nalog ne sadrži ime ni email, pa bez ID-a ne možemo da znamo koji je tvoj. Ako ID nemaš, piši nam ipak i naći ćemo rešenje.</p>
+
+    <h2>Šta se briše</h2>
+    <ul>
+      <li><strong>Sve</strong>, odmah i trajno: nalog, vozila, točenja, datumi registracije i servisa, podešavanja, u svim našim aplikacijama.</li>
+      <li>Na telefonu se brišu i lokalna kopija podataka i zakazani podsetnici.</li>
+      <li>Ništa se ne zadržava. Zbirna statistika za poređenje se računa ponovo svake noći, pa od sledećeg dana tvoji podaci više ne ulaze u nju.</li>
+    </ul>
+    <p>Ako želiš da obrišeš samo neki podatak (npr. jedno točenje ili jedno vozilo), to možeš u aplikaciji, bez brisanja naloga.</p>
+  </article>
+
+  <article id="en" lang="en">
+    <h2>In the app (immediately)</h2>
+    <ol class="steps">
+      <li>Open the <span class="ui">Sedi I Vozi</span> app.</li>
+      <li>Tap <span class="ui">Settings</span> (the gear at the top right), then <span class="ui">Account</span>.</li>
+      <li>Tap <span class="ui">Delete account and all data</span> and confirm.</li>
+    </ol>
+    <p>Deleting needs an internet connection. Afterwards the app starts over with a new, empty account.</p>
+
+    <h2>Without the app (email)</h2>
+    <p>If the app is no longer on your phone, email <strong>danilo.applications@gmail.com</strong> with the subject <code>Delete account</code> and your user ID or, if you linked a Google account, send it from that Google address. The user ID is shown on the <span class="ui">Account</span> screen (e.g. "User ID: 1a2b3c4d"). We delete the account within 30 days and confirm by email.</p>
+    <p class="muted">An anonymous account has no name or email, so without the ID we cannot tell which one is yours. If you do not have it, write to us anyway and we will find a way.</p>
+
+    <h2>What is deleted</h2>
+    <ul>
+      <li><strong>Everything</strong>, immediately and permanently: the account, vehicles, refuels, registration and service dates and settings, in all our apps.</li>
+      <li>The local copy on the phone and scheduled reminders are deleted too.</li>
+      <li>Nothing is kept. The comparison statistics are recomputed every night, so from the next day your data is no longer part of them.</li>
+    </ul>
+    <p>To delete only some data (for example one refuel or one vehicle), use the app; there is no need to delete the account.</p>
+  </article>
+</main>
+</body>
+</html>
