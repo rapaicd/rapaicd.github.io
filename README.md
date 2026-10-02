@@ -9,4 +9,6 @@ Public pages for Danilo Apps, served by GitHub Pages at https://rapaicd.github.i
 
 The pages are self-contained (no external fonts or scripts), so visitors send no data to third parties. Each app gets its own folder.
 
+Every page has `<meta name="robots" content="noindex">`: reachable by link, kept out of search results (Danilo's choice). New pages get it too. No robots.txt block, or crawlers could not see the noindex.
+
 Published URLs are used by the apps, Google Play and Google sign-in: never rename or move a page.
